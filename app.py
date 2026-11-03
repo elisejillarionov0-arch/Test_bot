@@ -5,6 +5,6 @@ class H(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", "text/plain; charset=utf-8")
         self.end_headers()
-        self.wfile.write("Привет! Версия 1".encode())
+        self.wfile.write("Привет! Версия 2".encode())
 
 HTTPServer(("0.0.0.0", 8000), H).serve_forever()
